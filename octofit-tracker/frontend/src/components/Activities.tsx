@@ -13,7 +13,7 @@ export default function Activities() {
   return <CapabilityCard
     title="Activities"
     description="Track student activity minutes and points."
-    emptyLabel="activities"
+    emptyMessage="No activities available yet."
     load={loadActivities}
     renderItem={(activity) => <><strong>{activity.type}</strong> — {activity.minutes} minutes, {activity.points} points</>}
   />;

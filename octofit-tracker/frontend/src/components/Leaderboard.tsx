@@ -13,7 +13,7 @@ export default function Leaderboard() {
   return <CapabilityCard
     title="Leaderboard"
     description="Compare team point totals."
-    emptyLabel="leaderboard rankings"
+    emptyMessage="No leaderboard rankings available yet."
     load={loadLeaderboard}
     renderItem={(ranking) => <><strong>#{ranking.rank} {ranking.teamName}</strong> — {ranking.totalPoints} points</>}
   />;

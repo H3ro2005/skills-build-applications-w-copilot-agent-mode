@@ -15,7 +15,7 @@ export default function Workouts() {
   return <CapabilityCard
     title="Workout suggestions"
     description="Recommend workouts from activity patterns."
-    emptyLabel="workout suggestions"
+    emptyMessage="No workout suggestions available yet."
     load={loadSuggestions}
     renderItem={(suggestion) => <><strong>{suggestion.title}</strong><span className="d-block">{suggestion.reason}</span></>}
   />;

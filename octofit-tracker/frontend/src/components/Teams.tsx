@@ -13,7 +13,7 @@ export default function Teams() {
   return <CapabilityCard
     title="Teams"
     description="Manage teams and members."
-    emptyLabel="teams"
+    emptyMessage="No teams available yet."
     load={loadTeams}
     renderItem={(team) => <><strong>{team.name}</strong>{team.mascot && ` (${team.mascot})`}<span className="d-block">Members: {team.members?.length ?? 0}</span></>}
   />;
